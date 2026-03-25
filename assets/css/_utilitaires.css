@@ -1,0 +1,75 @@
+/* Variables et utilitaires
+   ========================================================================== */
+
+/****** Variables (peuvent être utilisées dans tous les fichiers) *******/
+:root {
+    --color-text: #000;
+    --color-bg: #ABE8F9;
+    --color-J: #FFB331;
+    --color-BF: #214BB2;
+    --color-B: #418ADE;
+    --font-family: 'Poppins', sans-serif;
+    --border:3px solid #dba70d;
+    }
+
+
+/*** Clearfix ***/
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*** Harmoniser le modèle de boîte avec Box-Sizing ***/
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+/*** Styles de base ***/
+abbr[title] {
+    cursor: help;
+}
+
+/** Accessibilité
+  * Pour cacher visuellement tout en gardant accessible un contenu:
+  * screen-reader-only ou visuallyhidden **/
+  .sauter {
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+    background-color: var(--color-BF);
+    border-bottom: 3px solid #dba70d;
+    color: #ffffff;
+    display: block;
+    padding: 0.25em 0;
+    text-align: center;
+}
+/** Accessibilité
+  * Pour cacher visuellement tout en gardant accessible un contenu:
+  * screen-reader-only ou visually-hidden **/
+  .screen-reader-only,
+  .visually-hidden {
+      border: 0;
+      clip: rect(0 0 0 0);
+      height: 1px;
+      margin: -1px;
+      overflow: hidden;
+      padding: 0;
+      position: absolute;
+      width: 1px;
+  }
+  
+  .screen-reader-only.focusable:active,
+  .screen-reader-only.focusable:focus,
+  .visually-hidden.focusable:active,
+  .visually-hidden.focusable:focus{
+      clip: auto;
+      height: auto;
+      margin: 0;
+      overflow: visible;
+      position: static;
+      width: auto;
+  }

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/maxandre.css">
+    <link rel="icon" type="image/png" href="../assets/logo/SVG/Fichier 7logo_epigraphe.svg">
+    <script defer src="../assets/js/menu.js"></script>
+    <title>concours</title>
+</head>
+<body>
+    <header class="entete" role="banner">
+        <div class ="conteneur">
+            
+                <a href="../accueil/index.html" class="logo">
+                    <img src="../assets/logo/SVG/Fichier 7logo_epigraphe.svg" alt="Logo Chasse aux épigraphe"></a>
+                    <nav class="nav nav--closed">
+                        <ul class="nav__list">
+                        <li><a class="nav__link" href="../accueil/index.html">Accueil</a></li>
+                        <li><a class="nav__link" href="../chasse/index.html">Chasse aux épigraphe</a></li>
+                        <li><a class="nav__link" href="../galerie/index.html">Galerie de personnages</a></li>
+                        <li><a class="nav__link" href="../carte/index.html">Carte</a></li>
+                    </ul>
+
+            </nav>
+        </div>
+    </header>
+    <main>
+        
+    <h1 class="titre--principal">Concours</h1>
+    <div class="wrapper">
+        <div>
+            <h2 class="titre--secondaire">Courez la chance de gagner un forfait pour deux à l’Auberge des Illustres voisins incluant : </h2>
+            <p>Le souper à la carte, la nuitée à l’Auberge, le petit-déjeuner à la carte.</p>
+            <img class="img_auberge" src="../assets/images/carte-formulaire/680/chambre.jpg" alt="chambre" class="image--concours">
+        </div>
+
+        <h2 class="titre--secondaire">Règlements du concours</h2>
+            <p>Ouvert aux résidents canadiens majeurs.</p>
+            <p>Les participants sont admissibles du 5 avril au 10 juin 2025.</p>
+            <p>Une participation par personne, par jour. Le tirage aura lieu le 10 juin 2025.</p>
+    
+        <div class="conteneur--formulaire">
+            <h2 class="titre--secondaire">Formulaire de participation</h2>
+            <form action="index.html" class="formulaire" role="form">
+                <fieldset>
+                    <legend class="h3">Format de la brochure</legend>
+                    <ul class="ULsanspuces rangee">
+                        <li>
+                            <div class="radio">
+                                <input class="screen-reader-only btnRadio" type="radio" name="genre" value="homme" id="homme">
+                                <label for="homme">Homme</label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="radio">
+                                <input class="screen-reader-only btnRadio" type="radio" name="genre" value="femme" id="femme">
+                                <label for="femme">Femme</label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="radio">
+                                <input class="screen-reader-only btnRadio" type="radio" name="genre" value="non-binaire" id="non-binaire">
+                                <label for="non-binaire">non-binaire</label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="radio">
+                                <input class="screen-reader-only btnRadio" type="radio" name="genre" value="autre" id="autre">
+                                <label for="autre">autre</label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="radio">
+                                <input class="screen-reader-only btnRadio" type="radio" name="genre" value="pas-repondre" id="pas-repondre">
+                                <label for="pas-repondre">Je préfere ne pas répondre</label>
+                            </div>
+                        </li>
+                    </ul>
+                </fieldset>
+                <fieldset>
+                    <legend class="h3">Nom complet</legend>
+                    <div class="nom--complet ctnValidation">
+                        <p>
+                            <label for="prenom">Prénom</label>
+                            <input class="moyen" type="text" name="prenom" id="prenom" pattern="^[A-Za-zÀ-ÖØ-öø-ÿœŒÆæÉéÈèÊêËëÎîÏïÔôÛûÜüŸÿÇç' -]+$"  title="Veuillez entrer un nom valide (sans chiffres ni caractères spéciaux)." required >
+                            <label for="nom">Nom</label>
+                            <input class="moyen" type="text" name="nom" id="nom" required>
+                        </p>
+                        <p class="erreur"> </p>
+                    </div>
+                </fieldset>
+                <div class="adresse ctnValidation">
+                    <p>
+                        <label for="adresse">Adresse</label>
+                        <input class="champLong" type="text" name="adresse" id="adresse" required>
+                    </p>
+                    <p class="erreur"> </p>
+                </div>
+                <div class="ville ctnValidation">
+                    <p>
+                        <label for="province">Ville</label>
+                        <input class="champMoyen" type="text" name="ville" id="ville" required>
+                    </p>
+                    <p class="erreur"> </p>
+                </div>
+                <div>
+                    <p>
+                    <label for="pays">Pays</label>
+                    <select class="champMoyen" name="province" id="province" role="landmarks">
+                        <option value="AB">Alberta</option>
+                        <option value="BC">Colombie-Britannique</option>
+                        <option value="MB">Manitoba</option>
+                        <option value="NB">Nouveau-Brunswick</option>
+                        <option value="NL">Terre-Neuve-et-Labrador</option>
+                        <option value="NS">Nouvelle-Écosse</option>
+                        <option value="ON">Ontario</option>
+                        <option value="PE">Île-du-Prince-Édouard</option>
+                        <option value="QC">Québec</option>
+                        <option value="SK">Saskatchewan</option>
+                        <option value="NT">Territoires du Nord-Ouest</option>
+                        <option value="NU">Nunavut</option>
+                        <option value="YT">Yukon</option>
+                    </select>
+                    </p>
+                </div>
+                <div class="codepostal ctnValidation">
+                    <p>
+                        <label for="codepostal">Code postal (A1A 1A1)</label>
+                        <input class="champPetit" type="text" name="codepostal" id="codepostal" maxlength="6" required>
+                    </p>
+                    <p class="erreur"> </p>
+                </div>
+
+
+
+                    <fieldset>
+                        <legend class="h3">Téléphone (indicatif - numéro)</legend>
+                        <div class="flexbox">
+                            <div class="div-sm ctnValidation">
+                                <p>
+                                    <label for="indicatif">Indicatif</label>
+                                    <input type="tel" name="indicatif" id="indicatif" pattern="[0-3]+" required>
+                                </p>
+                            </div>
+                            <div class="div-lg ctnValidation">
+                                <p>
+                                    <label for="telephone">Téléphone</label>
+                                    <input type="tel" name="telephone" id="telephone" pattern="[0-7]+" required>
+                                </p>
+                                <p class="erreur"></p>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <div class="courriel ctnValidation">
+                        <p>
+                            <label for="courriel">Courriel</label>
+                            <input class="champLong" type="email" name="courriel" id="courriel" required>
+                        </p>
+                        <p class="erreur"> </p>
+                    </div>
+                    <div>
+                        <p>
+                            <label for="date">Chasse aux épigraphes résolue</label>
+                            <input class="champ-resolue" type="text" name="chasse" id="chasse">
+                        </p>
+                    </div>
+
+                <ul class="infolettre">
+                    <li>
+                        <input type="checkbox" name="infolettre" id="infolettre">
+                        <label for="infolettre"><a class="reglement_lien"href="#">J'ai lu et accepte les règlements du concours</a></label>
+                    </li>
+                </ul>
+                <br>
+                <div class="bouton">
+                    <button type="submit">Soumettre le Formulaire</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    </main>
+    <footer>
+        <div class ="conteneur conteneur__footer">
+                
+            <a href="../accueil/index.html" class="logo logo__footer">
+                <img src="../assets/logo/SVG/Fichier 7logo_epigraphe.svg" alt="Logo Chasse aux épigraphe"></a>
+                <nav class="nav nav__footer">
+                    <ul class="nav__list footer__list">
+                    <li><a class="nav__link nav__link__footer" href="../accueil/index.html">Accueil</a></li>
+                    <li><a class="nav__link nav__link__footer" href="../chasse/index.html">Chasse aux épigraphe</a></li>
+                    <li><a class="nav__link nav__link__footer" href="../galerie/index.html">Galerie de personnages</a></li>
+                    <li><a class="nav__link nav__link__footer" href="../carte/index.html">Carte</a></li>
+                </ul>
+    
+        </nav>
+    </div>
+        </div>
+        <div class="reseaux-sociaux ">
+            <ul class="reseaux-sociaux__list">
+                <li class="reseaux-sociaux__item">
+                    <span>
+                        <span class="screen-reader-only"></span>
+                        <span class="icone icone--facebook"></span>
+                    </span>
+                </li>
+                <li class="reseaux-sociaux__item">
+                    <span>
+                        <span class="screen-reader-only"></span>
+                        <span class="icone icone--x"></span>
+                    </span>
+                </li>
+                <li class="reseaux-sociaux__item">
+                    <span>
+                        <span class="screen-reader-only"></span>
+                        <span class="icone icone--youtube"></span>
+                    </span>
+                </li>
+                <li class="reseaux-sociaux__item">
+                    <span>
+                        <span class="screen-reader-only"></span>
+                        <span class="icone icone--instagram"></span>
+                    </span>
+                </li>
+            </ul>
+        </div>
+        <p class="copyright">Accueil - Chasse aux épigraphes - Galerie de personnages - Carte
+            Logos Facebook, Youtube, X, Instagram  
+        </p>
+        <p class="copyright">
+            Une autre création de Énigma, 250 boul. Charest ouest, Québec, Québec. 418-654-9823
+             Merci à l’équipe des données ouvertes de la Ville de Québec qui a rendu disponibles le jeu de données « Épigraphes historiques » sous licence CC BY. Ces données ont été adaptées pour mieux répondre aux besoins pédagogiques et servir de prétexte à la « Chasse aux épigraphes ».
+        </p>
+        <p class="copyright">
+            Une réalisation de Rose-Gabrielle Moreau, Maxandre Martineau, Ben et Brandon © Tous droits réservés 2025. Travail scolaire réalisé dans le cadre du programme Techniques d’intégration multimédia. Cégep de Sainte-Foy</p>
+        </p>
+    </footer>
+</body>
+</html>

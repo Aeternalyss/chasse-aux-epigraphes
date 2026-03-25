@@ -1,0 +1,14 @@
+#carte {
+    min-height: 600px;
+    max-width: 1000px;
+    margin: 0 auto;
+    border: 6px solid var(--color-BF);
+    border-radius: 8px;
+}
+
+#repere {
+    cursor: pointer;
+}
+.image{
+    border-radius: 8px;
+}

@@ -1,0 +1,111 @@
+@charset "UTF-8";
+
+/* @autor rose-gabrielle moreau */
+
+@import "_normalize.css";
+
+/* Utilitaires (variables À DÉFINIR)
+   ========================================================================== */
+@import "_utilitaires.css";
+@import "_style.css";
+
+/* Charte typographique
+   ========================================================================== */
+@import "_typo.css";
+
+/* Grille
+   ========================================================================== */
+/* @import "grille.css"; */
+
+/* Menu
+   ========================================================================== */
+@import "_menu.css";
+body {
+    background-color: #b9e0f2;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+.filtres__bouton{
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--color-J);
+    outline: none;
+    border: none;
+    width: 100%;
+    display: block;
+    padding: .5rem;
+    border-radius: 6px;
+    font-family: 'Inconsolata';
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.filtre-indice, .filtre-secteur {
+    text-align: left;
+    margin: 2rem auto;
+}
+
+.filtre-indice ul, .filtre-secteur ul {
+    display: flex;
+    justify-content: left;
+    gap: 2rem;
+    padding: 0;
+    list-style: none;
+}
+
+.filtre-indice,
+.filtre-secteur {
+   cursor: pointer;
+}
+
+.galerie-de-personnages {
+    max-width: 1200px;
+    margin: auto;
+    padding: 2rem;
+}
+
+.personnages-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(307px, 2fr));
+    gap: 2rem;
+    justify-items: center;
+}
+
+.personnage-card {
+    background-color: #fbbd3c;
+    border-radius: 10px;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+.consulter-fiche:hover{
+    color : #fff
+}
+.personnage-card:hover {
+    background-color: #1f4ed8;
+    transform: translateY(-5px);
+}
+.a:hover:hover {
+    color: #fbbd3c;
+}
+
+.personnage-card img, .personnage-card picture img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.personnage-card h3 {
+    margin: 0.5rem 0;
+    color: #000;
+}
+
+.consulter-fiche {
+    color: #1f4ed8;
+    text-decoration: underline;
+    cursor: pointer;
+}

@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, width=device-width">
+
+    <link rel="stylesheet" href="../assets/css/galerie.css" />
+
+    <title>Galerie de Personnages</title>
+    <meta name="description" content="Découvrez la galerie de personnages historiques.">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+           <link rel="icon" type="image/png" href="../assets/logo/SVG/Fichier 7logo_epigraphe.svg">
+
+		<script defer src="../assets/js/menu.js"></script>
+        <script defer src="../assets/js/filtre.js"></script>
+</head>
+<body>
+<header class="entete" role="banner">
+<div class ="conteneur">
+            
+                <a href="../accueil/index.html" class="logo">
+                    <img src="../assets/logo/SVG/Fichier 7logo_epigraphe.svg" alt="Logo Chasse aux épigraphe"></a>
+                    <nav class="nav nav--closed">
+                        <ul class="nav__list">
+                        <li><a class="nav__link" href="../accueil/index.html">Accueil</a></li>
+                        <li><a class="nav__link" href="../chasse/index.html">Chasse aux épigraphe</a></li>
+                        <li><a class="nav__link" href="../galerie/index.html">Galerie de personnages</a></li>
+                        <li><a class="nav__link" href="../carte/index.html">Carte</a></li>
+                    </ul>
+
+            </nav>
+        </div>
+</header>
+<h1 id="contenu" class="titre--principal">Galerie</h1>
+  <div class="galerie-de-personnages">
+        <div class="filtre-indice">
+                <h2>Filtrer par type d’indice :</h2>
+                <ul>
+                    <li><button class="filtres__bouton" data-critere="1">Personnages</button></li>
+                    <li><button class="filtres__bouton" data-critere="2">Objets</button></li>
+                    <li><button class="filtres__bouton" data-critere="3">Lieux</button></li>
+                </ul>
+            </div>
+        <section class="filtres">
+            <div class="filtre-secteur">
+                <h2>Filtrer par secteur d’activité :</h2>
+                <ul>
+                    <li><button class="filtres__bouton" data-critere="4">Sport et spectacles</button></li>
+                    <li><button class="filtres__bouton" data-critere="5">Sciences et lettres</button></li>
+                    <li><button class="filtres__bouton" data-critere="6">Économie et politique</button></li>
+                    <li><button class="filtres__bouton" data-critere="7">Arts visuels</button></li>
+                </ul>
+            </div>
+            
+        </section>
+
+        <section class="personnages-grid">
+            <article class="personnage-card" data-critere="1,7">
+ 
+                <picture class="personnage_card">
+                    <source media="(max-width: 614px)" srcset="../assets/images/images-Galerie-et-fiche-personnages/307x490/e0001_edmund_alleyn.jpg">
+                    <source media="(min-width: 615px)" srcset="../assets/images/images-Galerie-et-fiche-personnages/614x980/e0001_edmund_alleyn.jpg">
+                    <img src="../assets/images/images-Galerie-et-fiche-personnages/307x405/e0001_edmund_alleyn.jpg" alt="Portrait de Edmund Alleyn">
+                  </picture>
+                <h3>Edmund Alleyn</h3>
+                <a class="consulter-fiche" href="../fiches/index.html?id=e0001">Consulter la fiche</a>
+            </article>
+
+            <article class="personnage-card" data-critere="1,5">
+                <picture class="personnage_card">
+                    <source media="(max-width: 614px)" srcset="../assets/images/images-Galerie-et-fiche-personnages/307x490/e0019_sigismund-mohr.jpg">
+                    <source media="(min-width: 615px)" srcset="../assets/images/images-Galerie-et-fiche-personnages/614x980/e0019_sigismund-mohr.jpg">
+                    <img src="../assets/images/images-Galerie-et-fiche-personnages/307x405/e0019_sigismund-mohr.jpg" alt="Portrait de Sigismund Mohr">
+                  </picture>
+                <h3>Sigismund Mohr</h3>
+                <a class="consulter-fiche" href="../fiches/index.html?id=e0019">Consulter la fiche</a>
+            </article>
+
+            <article class="personnage-card" data-critere="2,7">
+                <picture class="personnage_card">
+                    <source media="(max-width: 614px)" srcset="../assets/images/images-Galerie-et-fiche-personnages/307x490/e0021_alfred-pellan.jpg">
+                    <source media="(min-width: 615px)" srcset="../assets/images/images-Galerie-et-fiche-personnages/614x980/e0021_alfred-pellan.jpg">
+                    <img src="../assets/images/images-Galerie-et-fiche-personnages/307x405/e0021_alfred-pellan.jpg" alt="Portrait de Alfred Pellan">
+                  </picture>
+                <h3>Alfred Pellan</h3>
+                <a class="consulter-fiche" href="../fiches/index.html?id=e0021">Consulter la fiche</a>
+            </article>
+
+            <article class="personnage-card" data-critere="3,5">
+                <picture class="personnage_card">
+                    <source media="(max-width: 614px)" srcset="../assets/images/images-Galerie-et-fiche-personnages/307x490/e0005_robert_blatter_2.jpg">
+                    <source media="(min-width: 615px)" srcset="../assets/images/images-Galerie-et-fiche-personnages/614x980/e0005_robert_blatter_2.jpg">
+                    <img src="../assets/images/images-Galerie-et-fiche-personnages/307x405/e0005_robert_blatter_2.jpg" alt="Portrait de Robert Blatter">
+                  </picture>
+                <h3>Robert Blatter</h3>
+                <a class="consulter-fiche" href="../fiches/index.html?id=e0005">Consulter la fiche</a>
+            </article>
+
+            <article class="personnage-card" data-critere="2,6">
+                <picture class="personnage_card">
+                    <source media="(max-width: 614px)" srcset="../assets/images/images-Galerie-et-fiche-personnages/307x490/e0007_josephknight_boswell.jpg">
+                    <source media="(min-width: 615px)" srcset="../assets/images/images-Galerie-et-fiche-personnages/614x980/e0007_josephknight_boswell.jpg">
+                    <img src="../assets/images/images-Galerie-et-fiche-personnages/307x405/e0007_josephknight_boswell.jpg" alt="Joseph Knight Boswell">
+                  </picture>
+                <h3>Joseph Knight Boswell</h3>
+                <a class="consulter-fiche" href="../fiches/index.html?id=e0007">Consulter la fiche</a>
+            </article>
+
+            <article class="personnage-card" data-critere="1,6">
+                <picture class="personnage_card">
+                    <source media="(max-width: 614px)" srcset="../assets/images/images-Galerie-et-fiche-personnages/307x490/e0008_marthe_caillaudSimard.jpg">
+                    <source media="(min-width: 615px)" srcset="../assets/images/images-Galerie-et-fiche-personnages/614x980/e0008_marthe_caillaudSimard.jpg">
+                   <img src="../assets/images/images-Galerie-et-fiche-personnages/307x405/e0008_marthe_caillaudSimard.jpg" alt="Marthe Caillaud">
+                  </picture>
+                <h3>Marthe Caillaud</h3>
+                <a class="consulter-fiche" href="../fiches/index.html?id=e0008">Consulter la fiche</a>
+            </article>
+
+            <article class="personnage-card" data-critere="3,6">
+                <picture class="personnage_card">
+                    <source media="(max-width: 614px)" srcset="../assets/images/images-Galerie-et-fiche-personnages/307x490/e0022_maurice_pollack.jpg">
+                    <source media="(min-width: 615px)" srcset="../assets/images/images-Galerie-et-fiche-personnages/614x980/e0022_maurice_pollack.jpg">
+                   <img src="../assets/images/images-Galerie-et-fiche-personnages/307x405/e0022_maurice_pollack.jpg" alt="Maurice Pollack">
+                  </picture>
+                <h3>Maurice Pollack</h3>
+                <a class="consulter-fiche" href="../fiches/index.html?id=e0022">Consulter la fiche</a>
+            </article>
+
+             <article class="personnage-card" data-critere="2,4">
+                <picture class="personnage_card">
+                    <source media="(max-width: 614px)" srcset="../assets/images/images-Galerie-et-fiche-personnages/307x490/e0004_henriette_belley.jpg">
+                    <source media="(min-width: 615px)" srcset="../assets/images/images-Galerie-et-fiche-personnages/614x980/e0004_henriette_belley.jpg">
+                    <img src="../assets/images/images-Galerie-et-fiche-personnages/307x405/e0004_henriette_belley.jpg" alt="Henriette Belley">
+                  </picture>
+                <h3>Henriette Belley</h3>
+                <a class="consulter-fiche" href="../fiches/index.html?id=e0004">Consulter la fiche</a>
+            </article>
+
+            <article class="personnage-card" data-critere="3,4">
+                <picture class="personnage_card">
+                    <source media="(max-width: 614px)" srcset="../assets/images/images-Galerie-et-fiche-personnages/307x490/e0012_johnny-farago.jpg">
+                    <source media="(min-width: 615px)" srcset="../assets/images/images-Galerie-et-fiche-personnages/614x810/e0012_johnny-farago.jpg">
+                    <img src="../assets/images/images-Galerie-et-fiche-personnages/614x810/e0012_johnny-farago.jpg" alt="Johnny Farago">
+                  </picture>
+                <h3>Johnny Farago</h3>
+                <a class="consulter-fiche" href="../fiches/index.html?id=e0012">Consulter la fiche</a>
+            </article>
+
+            
+            
+
+            <article class="personnage-card" data-critere="1,4">
+                <picture class="personnage_card">
+                    <source media="(max-width: 614px)" srcset="../assets/images/images-Galerie-et-fiche-personnages/307x490/e0015_camille_henry.jpg">
+                    <source media="(min-width: 615px)" srcset="../assets/images/images-Galerie-et-fiche-personnages/614x980/e0015_camille_henry.jpg">
+                    <img src="../assets/images/images-Galerie-et-fiche-personnages/307x405/e0015_camille_henry.jpg" alt="Portrait de Camille Henry">
+                  </picture>
+                <h3>Camille Henry</h3>
+                <a class="consulter-fiche" href="../fiches/index.html?id=e0015">Consulter la fiche</a>
+            </article>
+
+            
+
+            <article class="personnage-card" data-critere="3,7">
+
+                <picture class="personnage_card">
+                    <source media="(max-width: 614px)" srcset="../assets/images/images-Galerie-et-fiche-personnages/307x490/e0016_louis_jobin.jpg">
+                    <source media="(min-width: 615px)" srcset="../assets/images/images-Galerie-et-fiche-personnages/614x980/e0016_louis_jobin.jpg">
+                    <img src="../assets/images/images-Galerie-et-fiche-personnages/307x405/e0016_louis_jobin.jpg" alt="Portrait de Louis Jobin">
+                  </picture>
+                <h3>Louis Jobin</h3>
+                <a class="consulter-fiche" href="../fiches/index.html?id=e0016">Consulter la fiche</a>
+            </article>
+
+            
+
+            <article class="personnage-card" data-critere="2,5">
+                <picture class="personnage_card">
+                    <source media="(max-width: 614px)" srcset="../assets/images/images-Galerie-et-fiche-personnages/307x490/e0002_aubert_degaspe.jpg">
+                    <source media="(min-width: 615px)" srcset="../assets/images/images-Galerie-et-fiche-personnages/614x980/e0002_aubert_degaspe.jpg">
+                    <img src="../assets/images/images-Galerie-et-fiche-personnages/307x405/e0002_aubert_degaspe.jpg" alt="Portrait de Philippe-Joseph Aubert">
+                  </picture>
+                <h3>Philippe-Joseph Aubert de Gaspé</h3>
+                <a  class="consulter-fiche" href="../fiches/index.html?id=e0002">Consulter la fiche</a>
+            </article>
+
+            
+
+            
+        </section>
+    </div>
+	<footer>
+    <div class ="conteneur conteneur__footer">
+            
+        <a href="../accueil/index.html" class="logo logo__footer">
+            <img src="../assets/logo/SVG/Fichier 7logo_epigraphe.svg" alt="Logo Chasse aux épigraphe"></a>
+            <nav class="nav nav__footer">
+                <ul class="nav__list footer__list">
+                <li><a class="nav__link nav__link__footer" href="../accueil/index.html">Accueil</a></li>
+                <li><a class="nav__link nav__link__footer" href="../chasse/index.html">Chasse aux épigraphe</a></li>
+                <li><a class="nav__link nav__link__footer" href="../galerie/index.html">Galerie de personnages</a></li>
+                <li><a class="nav__link nav__link__footer" href="../carte/index.html">Carte</a></li>
+            </ul>
+
+    </nav>
+</div>
+    </div>
+    <div class="reseaux-sociaux ">
+        <ul class="reseaux-sociaux__list">
+            <li class="reseaux-sociaux__item">
+                <span>
+                    <span class="screen-reader-only"></span>
+                    <span class="icone icone--facebook"></span>
+                </span>
+            </li>
+            <li class="reseaux-sociaux__item">
+                <span>
+                    <span class="screen-reader-only"></span>
+                    <span class="icone icone--x"></span>
+                </span>
+            </li>
+            <li class="reseaux-sociaux__item">
+                <span>
+                    <span class="screen-reader-only"></span>
+                    <span class="icone icone--youtube"></span>
+                </span>
+            </li>
+            <li class="reseaux-sociaux__item">
+                <span>
+                    <span class="screen-reader-only"></span>
+                    <span class="icone icone--instagram"></span>
+                    <a href="https://www.instagram.com/"></a>
+                </span>
+            </li>
+        </ul>
+    </div>
+    <p class="copyright">Accueil - Chasse aux épigraphes - Galerie de personnages - Carte
+
+
+
+        Logos Facebook, Youtube, X, Instagram
+        
+        Une autre création de Énigma, 250 boul. Charest ouest, Québec, Québec. 418-654-9823
+         Merci à l’équipe des données ouvertes de la Ville de Québec qui a rendu disponibles le jeu de données «Épigraphes historiques» sous licence CC BY. Ces données ont été adaptées pour mieux répondre aux besoins pédagogiques et servir de prétexte à la « Chasse aux épigraphes ».
+        
+        Logos Facebook, Youtube, X, Instagram
+
+        Logos Facebook, Youtube, X, Instagram  
+    </p>
+    <p class="copyright">
+        Une autre création de Énigma, 250 boul. Charest ouest, Québec, Québec. 418-654-9823
+         Merci à l’équipe des données ouvertes de la Ville de Québec qui a rendu disponibles le jeu de données « Épigraphes historiques » sous licence CC BY. Ces données ont été adaptées pour mieux répondre aux besoins pédagogiques et servir de prétexte à la « Chasse aux épigraphes ».
+    </p>
+    <p class="copyright">
+
+        Une réalisation de Rose-Gabrielle Moreau, Maxandre Martineau, Ben et Brandon © Tous droits réservés 2025. Travail scolaire réalisé dans le cadre du programme Techniques d’intégration multimédia. Cégep de Sainte-Foy</p>
+    </p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,69 @@
+@font-face {
+    font-family: 'playday';
+    src: url('/assets/polices/play_day/Play Day - Personal Use.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+@import url('https://fonts.googleapis.com/css2?family=Grand+Hotel&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+.titre--principal {
+    font-family: 'Grand Hotel', sans-serif; /* good to add a fallback */
+    font-size: 4em;
+}
+
+/* table des matières */
+/* .icone {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    vertical-align: middle;
+} */
+.hidden {
+    display: none;
+}
+.personnage-card {
+    transition:  0.3s ease;
+}
+
+.personnage-card.selection {
+    order: -1;
+}
+
+.icone--facebook {
+    background: url(../images/icone\ facebook.svg) center center no-repeat;
+    background-size: contain;
+}
+
+.icone--x {
+    background: url(../images/icone\ twitter.svg) center center no-repeat;
+    background-size: contain;
+}
+
+.icone--youtube {
+    background: url(../images/Vector.svg) center center no-repeat;
+    background-size: contain;
+}
+.icone--instagram {
+    background: url(../images/instagram.svg) center center no-repeat;
+    background-size: contain;
+}
+body{
+    background-color:#ABE8F9 ;
+  }
+.icone:hover{
+    filter: invert(25%) sepia(85%) saturate(1318%) hue-rotate(198deg) brightness(95%) contrast(91%);
+}
+.icone:visited{
+    filter: invert(25%) sepia(85%) saturate(1318%) hue-rotate(198deg) brightness(95%) contrast(91%);
+
+}
+.icone {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    
+    
+    /* vertical-align: middle; */
+  }
+  

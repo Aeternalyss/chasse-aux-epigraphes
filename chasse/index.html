@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/brandon.css">
+    <link rel="stylesheet" href="../assets/css/_menu.css">
+    <link rel="icon" type="image/png" href="../assets/logo/SVG/Fichier 7logo_epigraphe.svg">
+
+    <title>CHASSE AUX EPIGRAPHES</title>
+    <script defer src="../assets/js/epigraphes.js"></script>
+    <script defer src="../assets/js/chasse.js"></script>
+</head>
+<body>
+    <header> <div class ="conteneur">
+            
+        <a href="../accueil/index.html" class="logo">
+            <img src="../assets/logo/SVG/Fichier 7logo_epigraphe.svg" alt="Logo Chasse aux épigraphe"></a>
+            <nav class="nav nav--closed">
+                <ul class="nav__list">
+                <li><a class="nav__link" href="../accueil/index.html">Accueil</a></li>
+                <li><a class="nav__link" href="../chasse/index.html">Chasse aux épigraphe</a></li>
+                <li><a class="nav__link" href="../galerie/index.html">Galerie de personnages</a></li>
+                <li><a class="nav__link" href="../carte/index.html">Carte</a></li>
+            </ul>
+
+    </nav>
+</div>
+        <h1>La chasse aux épigraphes</h1>
+        <div class="entete cacher">
+            <img src="/assets/images/carte-formulaire/340/chambre.jpg" alt="">
+                <p>La chasse est composée de 12 épigraphes qui ont été sélectionnées pour leur intérêt historique ou anecdotique.
+                    <br>•  Pigez l’une des 64 combinaisons possibles.
+                    <br>•  Parcourez les fiches de la Galerie de personnages pour retracer chaque indice. S'agit-il du personnage, de l'objet ou du lieu?
+                    <br>•  Complétez la chasse et participez au concours.</p>
+        </div>
+    </header>
+    <main>
+        <div class="tableau">
+            <p class="initial">Tableau du jeu Chasse aux épigraphe</p>
+            <p class="en_cours cacher">Chasse en cours : x indices sur 3</p>
+            <div class="indice_x ">
+            <p class="indice" id="segmentPersonnage">indice x</p>
+             <p class="indice" id="segmentObjet">indice x</p>
+             <p class="indice" id="segmentLieu">indice x</p>
+            </div>
+            <div class="flex">
+                
+            <div class="personnage flex__indice">
+                <img src="" alt="" id="img_personnage" width="100%">  
+                <svg class="personnages_svg" id="svg" xmlns="http://www.w3.org/2000/svg" width="244" height="304" viewBox="0 0 244 304" fill="none">
+                    <path d="M122 0C105.822 0 90.3062 6.4057 78.8665 17.8079C67.4268 29.2101 61 44.6748 61 60.8C61 76.9252 67.4268 92.3899 78.8665 103.792C90.3062 115.194 105.822 121.6 122 121.6C138.178 121.6 153.694 115.194 165.134 103.792C176.573 92.3899 183 76.9252 183 60.8C183 44.6748 176.573 29.2101 165.134 17.8079C153.694 6.4057 138.178 0 122 0ZM198.25 152H45.75C33.6163 152 21.9797 156.804 13.3999 165.356C4.82008 173.908 0 185.506 0 197.6C0 231.526 13.9995 258.704 36.966 277.096C59.5665 295.184 89.8835 304 122 304C154.117 304 184.434 295.184 207.034 277.096C229.97 258.704 244 231.526 244 197.6C244 185.506 239.18 173.908 230.6 165.356C222.02 156.804 210.384 152 198.25 152Z" fill="black"/>
+                    </svg>
+                <p id="personnage__p">Personnage</p>
+            </div>    
+            <div class="objet flex__indice">
+                <img src="" alt="" id="img_objet" width="100%">
+                <svg class="objet_svg" id="svg" xmlns="http://www.w3.org/2000/svg" width="244" height="183" viewBox="0 0 244 183" fill="none">
+                    <path d="M244 91.5V165.571C244 170.194 242.164 174.627 238.895 177.895C235.627 181.164 231.194 183 226.571 183H17.4286C12.8062 183 8.3732 181.164 5.10471 177.895C1.83622 174.627 0 170.194 0 165.571V91.5C0 90.3444 0.459056 89.2362 1.27618 88.419C2.0933 87.6019 3.20156 87.1429 4.35714 87.1429H43.5714V156.857C43.5688 158.052 43.8118 159.234 44.2854 160.331C44.759 161.428 45.453 162.415 46.3244 163.233C47.1958 164.05 48.2258 164.679 49.3507 165.081C50.4755 165.484 51.671 165.651 52.863 165.571C55.1077 165.379 57.1957 164.342 58.7059 162.67C60.216 160.998 61.0358 158.816 61 156.563V87.1429H104.571V108.929C104.571 110.084 105.03 111.192 105.848 112.01C106.665 112.827 107.773 113.286 108.929 113.286H135.071C136.227 113.286 137.335 112.827 138.152 112.01C138.97 111.192 139.429 110.084 139.429 108.929V87.1429H183V156.857C182.997 158.052 183.24 159.234 183.714 160.331C184.188 161.428 184.882 162.415 185.753 163.233C186.624 164.05 187.654 164.679 188.779 165.081C189.904 165.484 191.1 165.651 192.292 165.571C194.532 165.379 196.617 164.345 198.127 162.678C199.636 161.011 200.459 158.834 200.429 156.585V87.1429H239.643C240.798 87.1429 241.907 87.6019 242.724 88.419C243.541 89.2362 244 90.3444 244 91.5ZM183 0H61C44.8218 0 29.3062 6.42677 17.8665 17.8665C6.42677 29.3062 0 44.8218 0 61V65.3571C0 66.5127 0.459056 67.621 1.27618 68.4381C2.0933 69.2552 3.20156 69.7143 4.35714 69.7143H43.5714V26.437C43.5356 24.1843 44.3554 22.0019 45.8656 20.3301C47.3757 18.6582 49.4637 17.6213 51.7084 17.4286C52.9004 17.3494 54.0959 17.5162 55.2208 17.9186C56.3456 18.3209 57.3757 18.9503 58.247 19.7675C59.1184 20.5847 59.8124 21.5724 60.286 22.6691C60.7596 23.7658 61.0026 24.9482 61 26.1429V69.7143H104.571V56.6429C104.571 55.4873 105.03 54.379 105.848 53.5619C106.665 52.7448 107.773 52.2857 108.929 52.2857H135.071C136.227 52.2857 137.335 52.7448 138.152 53.5619C138.97 54.379 139.429 55.4873 139.429 56.6429V69.7143H183V26.437C182.964 24.1843 183.784 22.0019 185.294 20.3301C186.804 18.6582 188.892 17.6213 191.137 17.4286C192.329 17.3494 193.525 17.5162 194.649 17.9186C195.774 18.3209 196.804 18.9503 197.676 19.7675C198.547 20.5847 199.241 21.5724 199.715 22.6691C200.188 23.7658 200.431 24.9482 200.429 26.1429V69.7143H239.643C240.798 69.7143 241.907 69.2552 242.724 68.4381C243.541 67.621 244 66.5127 244 65.3571V61C244 44.8218 237.573 29.3062 226.134 17.8665C214.694 6.42677 199.178 0 183 0Z" fill="black"/>
+                    </svg>
+                <p id="objet__o">Objet</p>
+            </div>
+            <div class="lieu flex__indice">
+                <img src="" alt="" id="img_lieu" width="100%">
+                <svg class="lieu_svg" id="svg" xmlns="http://www.w3.org/2000/svg" width="244" height="244" viewBox="0 0 244 244" fill="none">
+                    <path d="M150.154 183.961V22.5727C143.485 25.8259 136.94 30.9561 129.508 37.1124L127.493 38.7891C118.159 46.5469 107.172 55.7062 93.8462 60.0856V221.486C100.528 218.221 107.06 213.09 114.492 206.947L116.507 205.258C125.841 197.5 136.828 188.353 150.154 183.961ZM201.356 9.45938C205.198 10.9984 208.689 12.3999 212.017 13.5385L212.48 13.7012C218.274 15.7032 223.366 17.455 227.395 19.407C231.787 21.5216 235.754 24.2243 238.782 28.5662C241.785 32.8706 242.961 37.5503 243.499 42.4177C244 46.9598 244 52.4779 244 58.8218V165.23C244 174.314 244 181.921 243.324 187.915C242.636 194.109 241.085 200.19 236.743 205.12C234.137 208.051 230.961 210.418 227.408 212.077C220.714 215.168 213.882 215.243 207.713 214.179C201.669 213.141 195.701 210.888 190.445 208.711C188.693 207.985 187.017 207.28 185.415 206.596C181.911 205.107 178.708 203.743 175.417 202.592C170.737 200.928 167.071 200.165 164.131 200.265C162.294 200.315 160.469 200.566 158.688 201.016C147.839 203.681 138.68 211.264 127.355 220.661L126.455 221.399C115.518 230.458 102.267 241.269 85.1873 243.634C79.8318 244.385 72.9873 243.909 66.0802 242.858C58.4362 241.646 50.8885 239.89 43.4946 237.603C35.9671 235.345 28.6691 232.383 21.6972 228.756C15.3783 225.39 9.08431 221.036 5.21785 215.493C2.21477 211.176 1.03856 206.496 0.500512 201.629C-4.66139e-07 197.087 0 191.581 0 185.225V78.8171C0 69.7329 -1.25858e-06 62.1252 0.675691 56.1316C1.3639 49.9378 2.91549 43.8567 7.25743 38.9267C9.8601 35.9862 13.0258 33.6088 16.592 31.9697C23.2864 28.879 30.1184 28.804 36.2872 29.8675C42.3309 30.9186 48.2995 33.1584 53.5549 35.3356C55.3067 36.0613 56.9834 36.7662 58.585 37.4502C62.0886 38.9517 65.2919 40.3031 68.5828 41.4543C73.2751 43.1184 76.9288 43.8942 79.8693 43.7816C81.7046 43.7149 83.5189 43.4646 85.3124 43.0309C96.161 40.3657 105.32 32.783 116.645 23.386L117.545 22.6477C128.482 13.6011 141.733 2.79013 158.813 0.412728C169.048 -1.0012 179.171 1.43876 187.918 4.37924C192.347 5.88076 196.702 7.60751 200.706 9.20913L201.356 9.45938Z" fill="black"/>
+                    </svg>
+                <p id="lieu__l">Lieu</p>
+            </div>
+            </div>
+            <div class="retroaction">
+                <div class="haut cacher">
+            <p class="texte1">Activer le bouton Voulez-vous<br> piger une nouvelle chasse?</p>
+            <p class="texte2">Voulez-vous partir à la chasse aux indices?</p>
+        </div>
+            <button class="activer"id="btnDebuterChasse" >Commencer la chasse</button>
+            <!-- texte chasse gagné -->
+            <p class="texte3" id="texte3"> </p>
+            <ul class="lien cacher">
+                <button class="descactiver" id="btnDemarrerNouvelleChasse">Piger une nouvelle chasse</button>
+                <li><a href="../galerie/index.html">Aller à la Galerie de personnages</a></li>
+                <li><a href="../carte/index.html">Consulter la carte</a></li>
+                <li><a href="../concours/index.html" id="concours" hidden>Participer au concours</a></li>
+            </ul>
+        </div>
+    </div>
+    </main>
+    <footer>
+        <div class ="conteneur conteneur__footer">
+                
+            <a href="../accueil/index.html" class="logo logo__footer">
+                <img src="../assets/logo/SVG/Fichier 7logo_epigraphe.svg" alt="Logo Chasse aux épigraphe"></a>
+                <nav class="nav nav__footer">
+                    <ul class="nav__list footer__list">
+                    <li><a class="nav__link nav__link__footer" href="../accueil/index.html">Accueil</a></li>
+                    <li><a class="nav__link nav__link__footer" href="../chasse/index.html">Chasse aux épigraphe</a></li>
+                    <li><a class="nav__link nav__link__footer" href="../galerie/index.html">Galerie de personnages</a></li>
+                    <li><a class="nav__link nav__link__footer" href="../carte/index.html">Carte</a></li>
+                </ul>
+    
+        </nav>
+    </div>
+        </div>
+        <div class="reseaux-sociaux ">
+            <ul class="reseaux-sociaux__list">
+                <li class="reseaux-sociaux__item">
+                    <span>
+                        <span class="screen-reader-only"></span>
+                        <span class="icone icone--facebook"></span>
+                    </span>
+                </li>
+                <li class="reseaux-sociaux__item">
+                    <span>
+                        <span class="screen-reader-only"></span>
+                        <span class="icone icone--x"></span>
+                    </span>
+                </li>
+                <li class="reseaux-sociaux__item">
+                    <span>
+                        <span class="screen-reader-only"></span>
+                        <span class="icone icone--youtube"></span>
+                    </span>
+                </li>
+                <li class="reseaux-sociaux__item">
+                    <span>
+                        <span class="screen-reader-only"></span>
+                        <span class="icone icone--instagram"></span>
+                        <a href="https://www.instagram.com/"></a>
+                    </span>
+                </li>
+            </ul>
+        </div>
+        <p class="copyright">Accueil - Chasse aux épigraphes - Galerie de personnages - Carte
+            Logos Facebook, Youtube, X, Instagram  
+        </p>
+        <p class="copyright">
+            Une autre création de Énigma, 250 boul. Charest ouest, Québec, Québec. 418-654-9823
+             Merci à l’équipe des données ouvertes de la Ville de Québec qui a rendu disponibles le jeu de données « Épigraphes historiques » sous licence CC BY. Ces données ont été adaptées pour mieux répondre aux besoins pédagogiques et servir de prétexte à la « Chasse aux épigraphes ».
+        </p>
+        <p class="copyright">
+            Une réalisation de Rose-Gabrielle Moreau, Maxandre Martineau, Ben et Brandon © Tous droits réservés 2025. Travail scolaire réalisé dans le cadre du programme Techniques d’intégration multimédia. Cégep de Sainte-Foy</p>
+        </p>
+    </footer>
+</body>
+</html>

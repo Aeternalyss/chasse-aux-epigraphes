@@ -1,0 +1,198 @@
+@charset "UTF-8";
+
+/* @autor rose-gabrielle moreau */
+
+@import "_normalize.css";
+
+/* Utilitaires (variables À DÉFINIR)
+   ========================================================================== */
+@import "_utilitaires.css";
+@import "_style.css";
+
+/* Charte typographique
+   ========================================================================== */
+@import "_typo.css";
+
+/* Grille
+   ========================================================================== */
+/* @import "grille.css"; */
+
+/* Menu
+   ========================================================================== */
+@import "_menu.css";
+* {
+   outline-color: #dba70d;
+}
+
+.sauter{
+   width: 100%;
+   outline: none;
+   border-bottom: 3px solid var(--color-J);
+   display: block;
+   text-align: center;
+}
+.images{
+   /* margin: auto; */
+   /* align-items: center; */
+   width: 100%;
+   vertical-align: bottom;
+   border: 6px solid var(--color-BF);
+   border-radius: 8px;
+}
+@media(max-width:749px){
+
+.section{
+   display: flex;
+   flex-direction: column;
+   max-width: 960px;
+   overflow: hidden;
+}
+}
+
+.conteneur--images{
+   /* width: 100%; */
+   margin-left: 10px ;
+   margin-right: 10px;
+}
+@media (min-width:361px){
+   .conteneur--images{
+      margin-left: 40px ;
+      margin-right: 40px;
+   }
+
+}
+@media (min-width:751px){
+ .conteneur--images{
+   max-width:388px ;
+   float: left;
+   margin-left: 5% ;
+   margin-right:20px ;
+   /* order: -1; */
+
+ }
+ .section{
+   /* display: flex; */
+   margin: 0 auto;
+   flex-direction: column;
+   max-width: 960px;   
+ }
+/* p{
+   order: 1;
+} */
+}
+.conteneur--video{
+   position: relative;
+   padding-bottom: 50%;
+   height: 0;
+   margin: 10px 0px;
+   margin-left: 10%;
+   margin-right: 10%;
+}
+.conteneur--video iframe{
+   position: absolute;
+   margin: auto;
+   top: 0;
+   left: 0;
+   width: 100%;
+   /* height: 56.25%; */
+   aspect-ratio: 16/9;
+   border-radius: 8px;
+   background: linear-gradient(to right, var(--color-J),var(--color-BF),var(--color-J),var(--color-BF));
+   padding: 6px;
+   align-items: center;
+   /* margin: 10px; */
+}
+
+.legende--video{
+   
+   font-family: 'poppins', sans-serif;
+   /* display: flex; */
+   text-align:right ;
+   /* margin: 10px; */
+   margin-right: 6%;
+   /* padding: 6px; */
+   /* padding: 5px 0 3px 8px; */
+   font-size: .8rem;
+   /* margin-bottom: -10px; */
+   /* border-top-left-radius: 4px; */
+   /* border-top-right-radius: 4px; */
+ }
+
+@media(max-width:751px){
+.texte_sec1{
+   order: -1;
+}
+}
+ p{
+   margin:0 10px 0 10px;
+   line-height: normal;
+   padding: 10px;
+ }
+ @media(min-width:361px){
+   p{
+      margin:0 40px 0 40px;
+    }
+ }
+ @media(min-width:751px){
+   main{
+      margin:0 6% 0 6%;
+    }
+   .texte{
+      clear: left;
+      display: block;
+   }
+   .copyright{
+      text-align: center;
+      max-width: 960px;
+      margin: 0 auto;
+   }
+ }
+ .btnJeu{
+   text-align: center;
+   margin: 0 auto;
+ }
+ .btn{
+   text-align: center;
+   font-family: 'poppins';
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   color: #000;
+   text-decoration: none;
+   background-color: var(--color-J); 
+   border-radius: 8px;
+   min-height: 45px;
+   min-width: 290px;
+   border: 6px solid transparent;
+
+ }
+ /* a{
+   text-decoration: none;
+   color: black;
+ } */
+ .btn:hover{
+   color: white;
+   background-color: var(--color-BF);
+
+
+   /* background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" min-width="290" height="45" viewBox="0 0 233 45" fill="none"><path d="M0 7.99999C0 3.58171 3.58172 0 8 0H225C229.418 0 233 3.58172 233 8V36.9995C233 41.4177 229.418 44.9995 225 44.9995H8C3.58173 44.9995 0 41.4177 0 36.9995V7.99999Z" fill="%23FFB331"/><path d="M46 14.2681C6.45687 3.26304 3.49998 32.3777 7.99996 44.9999H225C229 29.6338 219.031 3.20585 182 14.2681C138 -2.19519 94 -0.548815 46 14.2681Z" fill="%23214BB2"/></svg>'); */
+ }
+ .btn:visited{
+   color: white;
+   border-color:  var(--color-J);
+   background-color: var(--color-BF);
+   
+ }
+
+ @media(min-width:361px){
+   .btnJeu{
+   padding-left:20% ;
+   padding-right:20% ;
+   }
+ }
+ @media(min-width:750px){
+   .btnJeu{
+   padding-left:35% ;
+   padding-right:35% ;
+   }
+ }

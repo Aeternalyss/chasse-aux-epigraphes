@@ -1,0 +1,227 @@
+.wrapper{
+  margin: 0 5px;
+}
+.btnRadio{
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+}
+.btnRadio label{
+  display: block;;
+}
+img{
+  max-width:100vw;
+  overflow-x: hidden;
+  margin: 0 auto;
+  display: block;
+  align-items: center;
+}
+.img_auberge{
+  border: #214BB2 solid 6px;
+  border-radius: 8px;
+}
+.conteneur--formulaire{
+  margin:0 auto;
+  max-width: 100vw;
+}
+
+.formulaire {
+  background-color: #418ADE ;
+    border-radius: 8px;
+    border: 6px solid;
+    border-color: #FFB331;
+    max-width: 700px;
+    padding: 30px;
+    margin: 0 auto;
+}
+fieldset {
+    border: 2px solid #FFB331;
+    border-radius: 8px;
+    padding: 20px;
+}
+.bouton {
+    color: yellow;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+button{
+  background-color: #FFB331;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  display: inline-block;
+  text-align: right;
+}
+button:hover{
+  background-color: #214BB2;
+  color: #fff;
+}
+a.reglement_lien {
+    color: #000;
+}
+input [type="text"] {
+    border-radius: 8px;
+}
+p input, select, textarea {
+  width: 100%;
+  padding: 20px 0;
+  margin: 0 auto;
+  border-radius: 8px;
+}
+
+select{
+  max-width:340px;
+}
+ul{
+  padding: 0;
+}
+
+input[type="radio"] + label {
+  display: block;
+  background: #214BB2;
+  color: #fff;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  margin: 0 auto;
+  text-align: center;
+}
+li{
+  list-style-type:none;
+}
+
+input[type="radio"]:checked + label {
+  background: #FFB331;
+  color: #000;
+}
+input[type="radio"]:hover + label {
+  background: #FFB331;
+  color: #000;
+  transition: all 0.3s ease; 
+  transform: scale(1.05);
+}
+p label,
+select label{
+  display: block;
+}
+
+.nom--complet{
+  max-width: 90%;
+}
+.flexbox{
+  display: flex;
+  justify-content: flex-start;
+}
+
+
+
+.div-sm{
+  width: calc(30% - 30px); 
+  margin-right:30px; 
+  margin-left:0; 
+  display: inline-block; 
+  vertical-align: top;
+}
+.div-lg{
+  width: calc(70% - 30px);
+  display: inline-block;
+  vertical-align: top;
+}
+.champ-resolue{
+  padding: 4rem;
+}
+
+@media (min-width:600px) {
+  input[type="radio"] + label {
+    padding: 2.5rem 1.5rem;
+    font-size: 1.5rem;
+  }
+  .champLong{
+    width: 100%;
+  }
+  .champMoyen, select .champMoyen{
+    width: 80%;
+  }
+  .champPetit{
+    width: 40%;
+  }
+  .champ-resolue{
+    padding: 5rem;
+  }
+  p input, select, textarea {
+    padding: 30px 0;
+
+  }
+  .wrapper{
+    max-width:670px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width:800px) {
+  /* input[type="radio"] + label {
+    padding: 1rem 2rem;
+    font-size: 1.8rem;
+    display: inline-block;
+
+  } */
+  .champLong{
+    width: 100%;
+  }
+  .champMoyen, select .champMoyen{
+    width: 60%;
+  }
+  .champPetit{
+    width: 20%;
+  }
+  .champ-resolue{
+    padding: 5rem;
+    width: 60%;
+  }
+  p input, select, textarea {
+    padding: 30px 0;
+  }
+  .moyen{
+    width: 68%;
+    display: inline-block;
+  }
+  p .flexbox{
+    margin-right:5px;
+    width:80%;
+    display: inline-block;
+  }
+  .formulaire {
+    min-width: 90%;
+  }
+  p input, select, textarea {
+    padding: 10px 0;
+
+  }
+  input[type="radio"] + label {
+    padding: 1.5rem 1rem;
+    font-size: 1rem;
+    display: inline-block;
+
+  }
+
+  .rangee {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+  }
+
+  input[type="radio"] + label {
+    flex: 1 1 auto;
+    text-align: center;
+    padding: 4.5rem 2rem;
+  }
+  .wrapper{
+    max-width: 960px;
+    margin: 0 auto;
+  }
+}

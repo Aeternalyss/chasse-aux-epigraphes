@@ -1,0 +1,361 @@
+@charset "UTF-8";
+
+/* @autor Brandon Nathan Ayigah */
+
+@import "_normalize.css";
+
+/* Utilitaires (variables À DÉFINIR)
+   ========================================================================== */
+@import "_utilitaires.css";
+@import "_style.css";
+
+/* Charte typographique
+   ========================================================================== */
+@import "_typo.css";
+
+/* Menu
+   ========================================================================== */
+@import "_menu.css";
+
+@font-face {
+    font-family: 'playday';
+    src: url('/assets/polices/play_day/Play Day - Personal Use.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+/*debut de l'entete*/
+h1{
+    padding: 0%;
+    background-color: orange;
+    text-align: center;
+}
+.entete{
+    padding: 4em;
+}
+.tableau{
+    margin: 4em;
+}
+.entete p{
+    font-family: Chenla;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+padding-top: 3em;
+padding-bottom: 2em;
+} 
+.entete img{
+    float: right;
+    border-radius: 8px;
+}
+
+@media (max-width:750px) {
+    body{
+        padding:2em ;
+    }
+    h1{
+        padding: 0%;
+        background-color: orange;
+        text-align: center;
+    }
+    .entete img{
+        width: 100%;
+    }
+}
+@media(max-width:360px){
+    body{
+        padding: 0.3em;
+    }
+    h1{
+        padding: 0%;
+        background-color: orange;
+        text-align: center;
+    }
+    .entete p {
+        padding:1em
+    }
+    .entete img{
+        width: 100%;
+    }
+    .tableau{
+        margin: 0.2em;
+    }
+}
+/*Commencement tableau de chasse */
+
+.tableau{
+    margin-top: 6em;
+    padding: 1.5em;
+    border-radius: 8px;
+    border: 6px solid var(--contour-bleu, #214BB2);
+}
+.flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 4em;
+    padding-left: 2em;
+}
+.flex__indice{ 
+    padding: 0.8em;
+    min-width: 27%;
+    border-radius: 8px;
+    border-top: 6px solid var(--contour-orange, orange);
+    border-right: 6px solid var(--contour-orange, orange);
+    border-bottom: 100px solid var(--contour-orange, orange);
+    border-left: 6px solid var(--contour-orange, orange);
+}
+.flex__indice p{
+    float:none;
+    padding-left: 6.5em;
+    align-content: center;
+    position:absolute;
+    padding-top: 2.2em;
+}
+.objet{
+    padding-top: 8em;
+    padding-left: 2em;
+}
+.lieu{
+    padding-top: 4.5em;
+    padding-left: 2.6em;
+}
+.indice{
+    float: none;
+    
+}
+.indice_x{
+    display: flex;
+    justify-content: space-around;
+}
+
+svg{
+    max-width: 100%; 
+    padding-left: 6.5em;
+    align-items: center;
+    
+    
+}
+@media (max-width:750px){
+    .flex{
+    display: flex;
+    flex-direction: row;
+    padding: 0em;
+    }
+    svg{
+        padding-left: 0em;
+        align-self: flex-start;
+    }
+    .flex__indice p{
+        padding-left: 0em;
+        padding-right: 7em;
+        align-content: center;
+    }
+}
+@media(max-width:360px){
+    .tableau{
+        display:block;
+    }
+    .flex{
+        display: block;
+        padding: 0em;
+    }
+    .flex__indice{
+        margin: 1em;
+    }
+    .indice{
+        padding-left: 6em;
+    }
+}
+/*bouton et texte a cacher*/
+.activer{
+    width: 30%;
+    height: 25%;
+    background-color: orange;
+    margin-left: 35%;
+    margin-top: 2em;
+}
+.texte1{
+    display:flex;
+    justify-content: flex-start;  
+    padding-right:0em;
+    padding-left: 3.5em;
+}
+.texte2{
+    display: flex;
+    justify-content: center;
+}
+.texte3{
+    display: flex;
+    justify-content: center;
+}
+.lien li:nth-of-type(1){
+    display: flex;
+    justify-content: center;
+}
+.lien li:nth-of-type(2){
+    display: flex;
+    justify-content: flex-end;
+}
+.lien li:nth-of-type(3){
+    display: flex;
+    justify-content: flex-end;
+}
+.descactiver{
+    display: flex;
+    justify-content: center;
+    background-color:rgb(218, 218, 218);
+    width: 30%;
+    height: 40%;
+    
+}
+.lien{
+    display: flex;
+    justify-content: space-between;
+}
+.haut{
+    display: flex;
+    justify-content: space-between;
+}
+.texte2{
+    margin-right: 30em;
+}
+.lien li:nth-of-type(2){
+    display: flex;
+    justify-content: flex-end;
+}
+@media (max-width:750px){
+    .tableau{
+        padding: 0em;
+    }
+    .flex__indice{
+        width: 20%;
+    }
+    .flex__indice p{
+        border-radius: 0em;
+        display: flex;
+        float:none;
+        padding-left: 0.5em;
+        align-content: center;
+        position:absolute;
+    padding-top: 2.8em;
+    }
+    .objet p{
+        padding-left: 1em;
+    }
+    .lieu{
+        padding-left: 3em;
+    }
+    svg{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .texte2{
+        margin: 2em;
+    }
+    .activer{
+        margin-left: 29%;
+        padding: 3em;
+        width: 239px;
+        height: 65px;
+        flex-shrink: 0;
+    }
+    .descactiver{
+        width: 239px;
+        height: 65px;
+        flex-shrink: 0;
+        padding-top: 0.7em;
+        margin-right: 5em;
+    }
+    .lien li:nth-of-type(1){
+        position:absolute;
+        padding-top: 10em;
+        padding-right: 3em;
+
+    }
+    .lien li:nth-of-type(2){
+        position: absolute;
+        padding-left: 22em;
+    }
+    .lien li:nth-of-type(3){
+       position: absolute;
+       padding-top: 5.5em;
+       padding-right: 2em;
+       
+    }
+    .lien{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .indice_x{
+        position: relative;
+        top: 0em;
+        right: 0.5em;
+    }
+    .tableau{
+        padding-bottom: 9em;
+    }
+}
+@media(max-width:360px){
+    .flex__indice{
+        width: 80%;
+        margin-top: 6em;
+    }
+    .indice_x{
+        display: flex;
+        flex-direction: column;
+    }
+    .indice_x p:nth-of-type(1){
+        position: relative;
+        top: 12em;
+    }
+    .indice_x p:nth-of-type(2){
+        position: relative;
+        top: 42em;
+    }
+    .indice_x p:nth-of-type(3){
+        position: relative;
+        top: 72em;
+    }
+    .activer{
+        margin-left: 2em;
+    }
+    .retroaction{
+        padding-bottom: 9em;
+    }
+     .lien li:nth-of-type(1){
+        padding-top: 8em;
+        padding-right: 2em;
+    }
+    .lien li:nth-of-type(2){
+        padding-top: 10em;
+        padding-right: 34em;
+    }
+    .lien li:nth-of-type(3){
+        padding-top: 6em;
+        padding-right: 2em;
+    }
+    .haut{
+        display: flex;
+        flex-direction: column;
+    }
+    .texte1{
+        margin-left: -1em;
+    }
+    .lieu{
+        margin-left: 1.23em;
+        margin-right: 0em;
+    }
+    .entete{
+        padding: 0em;
+    }
+}
+.activer:hover{
+    background-color: #214BB2;
+    color: white;
+}
+.cacher {
+    display: none;
+}

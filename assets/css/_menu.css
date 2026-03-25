@@ -1,0 +1,254 @@
+/**
+ * @author Prénom Nom courriel
+**/
+
+/**
+ * TABLE DES MATIÈRES
+ * Palette de couleurs
+ * Base commune
+ * - Bouton du menu
+ * - Liste du menu
+ * - Liens du menu
+ * Styles conditionnels au JavaScript
+ */
+
+/****** Base commune *******/
+.logo img{
+  /* width: 25%; */
+  height: 238px;
+  position: relative;
+}
+.nav__list a:hover{
+  color:#abe8f9
+}
+.conteneur{
+  margin:10px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+/* Bouton du menu */
+.nav__control {
+  background-color: #214BB2;
+  border-radius: 50px;
+  color: white;
+  border: none;
+  padding: 10px;
+  min-width: 40px;
+}
+
+@media (min-width: 750px) {
+  .nav__control {
+      display: none;
+  }
+}
+
+.nav__control:hover,
+.nav__control:active {
+  color: #fff;
+  background-color: #418ADE;
+}
+
+.nav__control:focus {
+  /* En mettant la règle outline: none;, les styles du navigateur
+   * pour les éléments en cours de focus sont effacés. Il faut alors
+   * les remplacer par d'autres styles qui peuvent être plus
+   * en accord avec la direction visuelle du projet.
+   */
+  outline: none;
+  /* AUTRES STYLES EN REMPLACEMENT DU OUTLINE */
+  /*
+   * Les règles outline-offset et outline permettent
+   * de modifier l'apparence du outline par défaut des navigateurs.
+   */
+  outline-offset: -5px;
+  outline: #dba70d auto 5px;
+}
+
+
+.nav__control:before {
+  display: inline-block;
+  content: "";
+  width: 1em;
+  height: 1em;
+  background-image: url(../images/ico-fermer.svg);
+  margin-right: 8px;
+  /* compléter pour afficher l’icône X */
+}
+
+.nav--closed .nav__control:before {
+  display: inline-block;
+  content:"";
+  width: 1em;
+  height: 1em;
+  background-image: url(../images/ico-menu.svg);
+  margin-right: 8px;
+  /* compléter pour afficher l’icône Hamburger */
+}
+
+/* Liste du menu */
+.nav__list {
+  color: #fff;
+  font-family: 'poppins', sans-serif;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  background-color:#214BB2 ;
+  align-items: center;
+  justify-content: space-around;
+  padding-left: 0;
+  border-radius: 50px;
+  min-width: 340px;
+  height: 368px;
+  margin-top:-55px ;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  
+}
+  /* nav medium */  
+@media (min-width:361px){
+    .logo img {
+      height: 252px;
+      width: 359px;
+    }
+    .nav__list  {
+      min-width: 363px;
+      height: 358px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      max-height: none;
+    }
+  }
+  /* nav table */
+@media (min-width:751px){
+    .conteneur {
+      flex-direction: row;
+      align-items: center;
+      padding: 1rem 2rem;
+    }
+    .nav{
+      width: 75%;
+    }
+    .nav__list {
+      flex-direction: row;
+      border-radius: var(--Corner-Full, 1000px);
+      /* width: 878px; */
+      max-height: 150px;
+      margin-left: -45px;
+    }
+    /* .footer__list{
+      margin-left: -55px;
+    } */
+  }
+
+@media (min-width: 750px) {
+  .nav__list-item {
+      display: inline-block;
+  }
+}
+
+/* Liens du menu */
+.nav__link {
+  background-color: none;
+  display: flex;
+  padding: 5px 10px;
+  /* width: 100%; */
+}
+
+.nav__link:link,
+.nav__link:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+.nav__link:hover {
+  color: #dba70d;
+  background-color: none;
+}
+
+.nav__link:active {
+  color: #fff;
+  background-color: #dba70d;
+}
+
+
+.nav__link:focus {
+  outline: none;
+  border-left: 3px solid #dba70d;
+}
+
+@media (min-width:750px){
+  .nav__link:focus{
+      border-left: none;
+      border-bottom: 5px solid #dba70d;
+      /* width: 100%; */
+  }
+}
+
+/** Une classe nav__link--active
+  sert à définir un état différent
+  pour l'item de menu actif
+  **/
+.nav__link--active {
+  border-left: 5px solid #dba70d;
+}
+
+@media (min-width: 750px) {
+  .nav__link--active {
+      border-left: none;
+      border-bottom: 5px solid #dba70d;
+  }
+}
+
+
+/* L'ajout par JavaScript de la classe .js
+* permet de rédiger des sélecteurs conditionnels à ce que Javascript est actif
+* De cette façon,
+*** en l'absence de JavaScript le menu restera visible et accessible
+*** en présence de JavaScript le menu est caché
+*/
+@media (max-width: 749px) {
+  .js .nav__list {
+      max-height: 100vh;
+      overflow: hidden;
+      transition: max-height 2s;
+  }
+
+  .js .nav--closed .nav__list {
+      max-height: 0;
+      transition: max-height 0.5s;
+  }
+}
+
+/* menu footer */
+
+/* .nav__footer{
+  color: #fff;
+  text-decoration: none;
+} */
+ @media(max-width:750px){
+.footer__list{
+  margin-top:-50px;
+}
+
+ }
+/* .reseaux-sociaux{
+  
+} */
+.reseaux-sociaux__list{
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  justify-content: space-evenly;
+  /* margin: 10px; */
+  padding: 10px 20% 10px 20%;
+
+}
+/* .icone {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  
+} */
